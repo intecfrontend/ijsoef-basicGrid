@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Red+Hat+Display:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <script src="main.js" defer></script>
+  <title>Brazilian Ice Cream</title>
+</head>
+
+
+
+<body>
+  <img class="bodycont" src="images/images.jpg" alt="">
+
+  <h1 class="glow">Brazilian Ice Cream</h1>
+  <form>
+    <div class="wrapper">
+      <div class="keuzewrapper">
+        <h2>Maak uw Keuze</h2>
+      </div>
+      <div class="keuze">
+        <div class="radio"id="marginex">
+          <div class="label">Horentje</div>
+          <img class="image" src="images/horentje.svg" alt="horentje icoon" />
+          <input type="radio" name="keuze" id="horentje" value="horentje" />
+
+        </div>
+
+        <div class="radio">
+          <div class="label" >Potje</div>
+          <img class="image" src="images/potje.svg" alt="Potje icoon" />
+          <input type="radio" name="keuze" id="potje" value="potje" / </div> </div> <div class="keuzewrapper">
+          <h2>Welke smaken?</h2>
+        </div>
+        <div class="smaak">
+          <div class="checkbox">
+            <div class="label">Chocolade</div>
+            <img class="image" src="images/choco.svg" alt="chocolade icoon" />
+            <input type="checkbox" name="chocolade" id="chocolade" />
+
+          </div>
+
+          <div class="checkbox">
+            <div class="label">Vanille</div>
+            <img class="image" src="images/vanille.svg" alt="vanille icoon" />
+            <input type="checkbox" name="vanille" id="vanille" />
+          </div>
+
+          <div class="checkbox">
+            <div class="label">Aardbei</div>
+            <img class="image" src="images/aardbei.svg" alt="aardbei icoon" />
+            <input type="checkbox" name="aardbei" id="vanille" />
+          </div>
+        </div>
+        <div class="keuzewrapper">
+          <h2>Hoeveel bolletjes?</h2>
+        </div>
+        <div class="aantal">
+          <div class="number">
+            <div class="label" id="aantalHorentje">Aantal Bolletjes:</div>
+            <input type="number" name="aantalHorentje" id="aantal" min="1" max="4" />
+          </div>
+          <div class="number">
+            <div class="label" id="aantalPotje">Prijs:</div>
+            <input type="number" name="aantalPotje" id="prijs" min="1" max="3" />
+          </div>
+        </div>
+
+      </div>
+  </form>
+  <div class="thebuttons">
+    <button class="labelbtn" id="labelbtn1" type="reset">Reset</button>
+    <button class="labelbtn" id="labelbtn2">Bestellen</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;400;700&family=Oleo+Script:wght@700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bodycont {
+  position: absolute;
+  z-index: 0;
+  /* opacity: 0.15; */
+  left: -10vw;
+  width: 120vw;
+  height: 100vh;
+  z-index: -100;
+  /* background-image: url('./images/images.jpg'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgba(255, 182, 193, 0.8);
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+body {
+  position: relative;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size: calc(100px + 3vw);
+  display: flex;
+  justify-content: center;
+  color: blanchedalmond;
+  text-shadow: 2px 2px 2px #ce5937;
+}
+
+h2 {
+
+  color: chocolate;
+}.keuzewrapper {
+  margin-top: 10px;
+  height: 50px;
+  padding: 6px;
+  color: chocolate;
+  background-color: blanchedalmond;
+}
+
+.image {
+  width: 30px;
+  height: auto;
+}
+
+.wrapper {
+  align-items: center;
+  box-shadow: 1px 2px 40px #ce5937;
+
+  margin: 0 auto;
+  width: calc(400px + 10vw);
+  background-color: rgb(255, 235, 205, 0.5);
+}
+
+.radio,
+.checkbox,
+.number {
+  display: flex;
+  justify-content: space-between;
+  background-color: chocolate;
+  width: 200px;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+#marginex{  margin-top:-15px;
+}
+#aantal,
+#prijs {
+  width: 25px;
+  margin: 0px 20px 0px 20px;
+}
+
+#potje,
+#chocolade,
+#horentje,
+#vanille,
+#aardbei {
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px 0px 20px;
+}
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+  color: white;
+}
+input {
+  cursor: pointer;
+}
+
+.labelbtn {
+  width: 110px;
+  border: none;
+  margin-top: 10px;
+  padding: 0px;
+  font-size: 20px;
+  color: blanchedalmond;
+  box-shadow: 2px 2px 2px #ce5937;
+  margin-bottom: -10px;
+  border-radius: 5px;
+  transition: all 0.6s;
+  border: 2px blanchedalmond solid;
+}
+.labelbtn:hover {
+  cursor: pointer;
+}
+#labelbtn1 {
+  background-color: magenta;
+}
+#labelbtn1:hover {
+  background-color: darkmagenta;
+}
+#labelbtn2 {
+  background-color: limegreen;
+}
+#labelbtn2:hover {
+  background-color: green;
+}
+.thebuttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 103%;
+  margin-top: 20px;
+  height: 45px;
+}
