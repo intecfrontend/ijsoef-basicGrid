@@ -6,6 +6,18 @@
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+.glass {
+  background: white;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+}
 .bodycont {
   position: absolute;
   z-index: 0;
@@ -27,13 +39,13 @@
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 5px #fff, 0 0 9px #fff, 0 0 15px #e60073, 0 0 40px #e60073,
+      0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 7px #fff, 0 0 10px #ff4da6, 0 0 15px #ff4da6,
+      0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6;
   }
 }
 body {
@@ -46,14 +58,17 @@ h1 {
   font-size: calc(100px + 3vw);
   display: flex;
   justify-content: center;
-  color: blanchedalmond;
-  text-shadow: 2px 2px 2px #ce5937;
+  color: #f8e0bc !important;
+  /* -webkit-text-stroke: 0.1px black;  */
+  /* -webkit-text-fill-color: rgb(255, 235, 205);
+  -webkit-text-stroke-color: gold;
+  -webkit-text-stroke-width: 2px; */
 }
 
 h2 {
-
   color: chocolate;
-}.keuzewrapper {
+}
+.keuzewrapper {
   margin-top: 10px;
   height: 50px;
   padding: 6px;
@@ -88,7 +103,8 @@ h2 {
   margin: 0 auto;
   margin-top: 0px;
 }
-#marginex{  margin-top:-15px;
+#marginex {
+  margin-top: -15px;
 }
 #aantal,
 #prijs {
